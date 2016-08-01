@@ -22,11 +22,6 @@ io.sockets.on('connection', function(socket){
     socket.on('disconnect',function(){
         socket.broadcast.emit('delete_user');
     })
-    socket.on('test', function(info){
-        console.log(info);
-        console.log(apple);
-        apple = info.info;
-    })
 })
 
 

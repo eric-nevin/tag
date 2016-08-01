@@ -244,8 +244,6 @@
 			this.createNewCircle = function(x,y, html_id, velX, velY){
 				var new_circle = new Circle(x,y,html_id, velX, velY);
 				circles[html_id] = new_circle;
-				//test socket
-				socket.emit('test', circles[html_id]);
 			}
 			// resets all necessary variables to their starting values and restarts the maininterval loop allowing movement to happen
 			this.reset = function(){
